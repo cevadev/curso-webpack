@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
     /*configuramos nuestro entry */
     entry: './index.js',
-    mode: 'development', // otro valor permitido es production
+    //mode: 'development', // otro valor permitido es production
     output: {
         /**indicamos el directorio donde queremos guardar el archivo final. path es un modulo de node que trabaja con rutas y directrios
          * __dirname lee la ubicacion del proyecto, si queremos que el archivo final se ubique dentro de una carpeta colocamos

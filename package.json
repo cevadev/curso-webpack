@@ -4,9 +4,10 @@
   "description": "curso de webpack 4",
   "main": "index.js",
   "scripts": {
-    "build": "webpack entry ./index.js --output ./bundle.js --mode development",
+    "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
     "build:local": "webpack --mode production",
-    "buidl:external": "webpack --config ./external/webpack.config.js"
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:multy:entries": "webpack --config ./clase-multy-entries/webpack.config.js"
   },
   "keywords": [
     "JS",

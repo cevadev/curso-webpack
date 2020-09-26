@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.info('Hello world contacto');\n\n//# sourceURL=webpack:///./clase-multy-entries/src/js/contacto.js?");
+eval("console.info('Hello world desde webpack contacto');\n\n//# sourceURL=webpack:///./clase-multy-entries/src/js/contacto.js?");
 
 /***/ })
 

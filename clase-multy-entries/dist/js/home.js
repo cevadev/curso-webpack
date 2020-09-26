@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.info('Hello world home');\n\n//# sourceURL=webpack:///./clase-multy-entries/src/js/index.js?");
+eval("console.info('Hello world desde webpack home');\n\n//# sourceURL=webpack:///./clase-multy-entries/src/js/index.js?");
 
 /***/ })
 

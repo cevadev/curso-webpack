@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.info('Hello world precios');\n\n//# sourceURL=webpack:///./clase-multy-entries/src/js/precios.js?");
+eval("console.info('Hello world desde webpack precios');\n\n//# sourceURL=webpack:///./clase-multy-entries/src/js/precios.js?");
 
 /***/ })
 

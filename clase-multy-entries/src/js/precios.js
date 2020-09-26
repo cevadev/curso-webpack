@@ -1,1 +1,1 @@
-console.info('Hello world precios');
+console.info('Hello world desde webpack precios');

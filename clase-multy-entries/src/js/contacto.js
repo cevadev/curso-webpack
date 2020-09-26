@@ -1,1 +1,1 @@
-console.info('Hello world contacto');
+console.info('Hello world desde webpack contacto');

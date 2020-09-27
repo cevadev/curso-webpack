@@ -1,3 +1,11 @@
 import '../css/index.css'
+import text from './texto.js'
 
-document.body.innerHTML = 'Hello world desde webpack home!'
+text();
+
+if(module.hot){
+    module.hot.accept('./texto.js', function(){
+        console.log('he recargado en caliente');
+        text()
+    })
+}

@@ -1,6 +1,7 @@
 const path = require('path')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -18,6 +19,11 @@ module.exports = {
      */
     filename: "js/[name].js",
   },
+  devServer: {
+    hot: true, //activamos el HotModuleReplacement de webpack
+    open: true, //abrimos el navegador automaticamente
+    port: 9000 //le asignaos un puerto distinto al 8080 que es por defecto
+  },
   module: {
     rules: [
       {
@@ -34,7 +40,12 @@ module.exports = {
          * esta indicado en la seccion plugin
          */
         use: [
-          /**agregamos un nuevo loader en forma de objeto */
+          /**Esta configuracion es optima para produccion ya que queremos que los css se coloquen en un archivo .css
+           * pero para el ambiente de desarrollo lo mas rapido es que los estilos se inyecten directamente en el html
+           * Para aplicar la configuracion modo dearrollo solo tendriamos que borrar la seccion entre llaves {}
+           * y colocar "style-loader"
+           * Tambien debemos borrar la instancia de MiniCSSExtractPlugin en la seccion de plugins
+           * agregamos un nuevo loader en forma de objeto */
           {
             loader: MiniCSSExtractPlugin.loader,
           },
@@ -44,6 +55,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: "Curso de Webpack"
     }),

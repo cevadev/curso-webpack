@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import data from './data.json'
 import Loader from './loader'
+import logo from '../../images/platzi.png'
+import video from '../../video/que-es-core.mp4'
 
 console.info(data);
 
@@ -11,6 +13,11 @@ function App(){
   }
   return (
     <div>
+      <p> Que linda aplicación realizada con React</p>
+      <video src={video} width={360} controls poster={logo}></video>
+      <p>
+        <img src={logo} alt="" width={40}/>
+      </p>
       <ul>
         {
           loaderList.map((item)=>(

@@ -14,7 +14,10 @@
     "build:babel": "webpack-dev-server --config ./clase_babel/webpack.config.js",
     "build:react": "webpack-dev-server --config ./clase_react/webpack.config.js",
     "build:url-loader": "webpack-dev-server --config ./clase_url_loader/webpack.config.js",
-    "build:prepro": "webpack-dev-server --config ./clase_prepro/webpack.config.js"
+    "build:prepro": "webpack-dev-server --config ./clase_prepro/webpack.config.js",
+    "build:prevent-duplication": "webpack --config ./clase_prevent_duplication/webpack.config.js",
+    "build:dll": "webpack --config ./clase_dll/webpack.dll.config.js",
+    "build:prevent-duplication-fast": "webpack --config ./clase_dll/webpack.config.js"
   },
   "keywords": [
     "JS",
